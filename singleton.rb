@@ -1,0 +1,5 @@
+#Singleton
+
+
+
+car = Car.new
