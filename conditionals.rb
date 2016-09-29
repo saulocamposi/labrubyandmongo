@@ -1,5 +1,5 @@
-puts "Get the command for the test"
-val = gets
+puts "Conditionals Example"
+
 
 if val == 1
   puts "first conditional"
