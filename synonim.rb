@@ -1,29 +1,24 @@
-synonim = { "a" => "valueone" , "b" => "valeutwo" , "c" => "valuethree"}
+synonim = { 'a' => 'valueone', 'b' => 'valeutwo', 'c' => 'valuethree' }
 
 keys = synonim.keys
 
 puts keys
 
 class Synonym
+    def searchdictionarysynonym(chave)
+        synonym = { 'reu' => 'executado', 'advogado' => 'advogado' }
+        keys = synonym.keys
+        puts keys.to_s
+        valuesynonym = 'null value'
 
-  def searchdictionarysynonym (chave)
-
-    synonym = {"reu" => "executado" , "advogado" => "advogado"}
-    keys = synonym.keys
-    puts "#{keys}"
-    valuesynonym = "null value"
-
-    keys.each do |key|
-        if key == chave
-          valuesynonym = synonym[key]
+        keys.each do |key|
+            valuesynonym = synonym[key] if key == chave
         end
+        valuesynonym
     end
-    return valuesynonym
-  end
-
 end
 
-chave = "reu"
+chave = 'reu'
 
 synonim = Synonym.new
 
