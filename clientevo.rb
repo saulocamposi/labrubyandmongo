@@ -17,7 +17,6 @@ end
 clientevo =  Clientevo.new("processo_no","cidade","comarcadacapital","reu","datadearquivamento","datadadigitacao","datadaremessa")
 
 puts clientevo
-
 puts clientevo.processo_no
 puts clientevo.cidade
 puts clientevo.comarcadacapital
